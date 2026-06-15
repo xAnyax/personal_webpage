@@ -22,10 +22,10 @@ function Projects() {
     {
       id: 3,
       title: 'AI Chatbot',
-      description: 'A conversational AI assistant for handling inquiries and providing automated support.',
-      technologies: ['React', 'Python', 'OpenAI API', 'Personal project'],
+      description: 'A full stack AI chatbot web app with multi-provider model support with no API keys required for chat.',
+      technologies: ['React', 'Node.js', 'Puter.js', 'TypeScript', 'Personal project'],
       image: '💬',
-      link: '#'
+      link: 'https://github.com/xAnyax/ai-chatbot'
     }
   ]
 
