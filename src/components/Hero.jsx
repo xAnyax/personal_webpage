@@ -27,10 +27,12 @@ function Hero() {
           <p className="hero-subtitle">
             A Computer Engineering student at HKUST, building the future through AI, web development, and innovative problem-solving.
           </p>
+          {/*
           <div className="hero-buttons">
             <button onClick={downloadCV} className="btn btn-primary">Download CV</button>
             <button onClick={() => scrollToSection('contact')} className="btn btn-secondary">Get In Touch</button>
           </div>
+          */}
           <div className="social-links">
             <SocialIcon platform="github" />
             <SocialIcon platform="linkedin" />
