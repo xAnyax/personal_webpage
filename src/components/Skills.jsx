@@ -22,10 +22,9 @@ function Skills() {
         { name: 'Numpy', level: 65 },
         { name: 'Pandas', level: 65 },
         { name: 'Pytorch', level: 60 },
-        { name: 'React', level: 80 },
+        { name: 'React', level: 75 },
         { name: 'Node.js', level: 60 },
-        { name: 'Git', level: 75 },
-        { name: 'CMake', level: 70 },
+        { name: 'CMake', level: 65 },
         { name: 'Linux / Unix CLI', level: 80 }
       ]
     }
