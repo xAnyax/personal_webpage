@@ -43,7 +43,7 @@ function Contact() {
               <span className="icon">📧</span>
               <div>
                 <h4>Email</h4>
-                <a href="mailto:hohimtang710@gmail.com">hohimtang710@gmail.com</a>
+                <a href="mailto:tanghohim710@gmail.com">tanghohim710@gmail.com</a>
               </div>
             </div>
           </div>
