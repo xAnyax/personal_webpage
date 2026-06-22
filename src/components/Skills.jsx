@@ -6,12 +6,13 @@ function Skills() {
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 80 },
-        { name: 'C', level: 70 },
-        { name: 'C++', level: 75 },
+        { name: 'Python', level: 75 },
+        { name: 'C', level: 65 },
+        { name: 'C++', level: 70 },
         { name: 'Java', level: 50 },
         { name: 'HTML / CSS', level: 90 },
-        { name: 'JavaScript', level: 80 },
+        { name: 'JavaScript', level: 75 },
+        { name: 'TypeScript', level: 65 },
         { name: 'SQL (SQLite)', level: 60 }
       ]
     },
@@ -22,9 +23,10 @@ function Skills() {
         { name: 'Pandas', level: 65 },
         { name: 'Pytorch', level: 60 },
         { name: 'React', level: 80 },
+        { name: 'Node.js', level: 60 },
         { name: 'Git', level: 75 },
         { name: 'CMake', level: 70 },
-        { name: 'Linux / Unix CLI', level: 75 }
+        { name: 'Linux / Unix CLI', level: 80 }
       ]
     }
   ]
