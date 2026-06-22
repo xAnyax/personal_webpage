@@ -22,7 +22,7 @@ function SocialIcon({ platform, url }) {
   const platformLinks = {
     github: 'https://github.com/xAnyax',
     linkedin: 'https://linkedin.com/in/ho-him-tang-444957311',
-    email: 'mailto:hohimtang710@gmail.com'
+    email: 'mailto:tanghohim710@gmail.com'
   }
 
   return (
