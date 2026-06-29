@@ -1,31 +1,75 @@
 import React from 'react'
 import './Skills.css'
 
+const skillIcons = {
+  Python: 'python',
+  C: 'c',
+  'C++': 'cplusplus',
+  Java: 'openjdk',
+  'HTML / CSS': ['html5', 'css'],
+  JavaScript: 'javascript',
+  TypeScript: 'typescript',
+  'SQL (SQLite)': 'sqlite',
+  Numpy: 'numpy',
+  Pandas: 'pandas',
+  Pytorch: 'pytorch',
+  TensorFlow: 'tensorflow',
+  'Scikit-learn': 'scikitlearn',
+  'Three.js': 'three.js',
+  React: 'react',
+  'Node.js': 'nodedotjs',
+  CMake: 'cmake',
+  'Linux / Unix CLI': 'linux',
+  Github: 'github',
+}
+
+function SkillIcon({ icons }) {
+  const iconList = Array.isArray(icons) ? icons : [icons]
+
+  return (
+    <span className="skill-icon-group">
+      {iconList.map((icon) => (
+        <img
+          key={icon}
+          src={`https://cdn.simpleicons.org/${icon}`}
+          alt=""
+          className="skill-icon"
+          loading="lazy"
+        />
+      ))}
+    </span>
+  )
+}
+
 function Skills() {
   const skillCategories = [
     {
       category: 'Programming Languages',
       skills: [
-        { name: 'Python', level: 75 },
-        { name: 'C', level: 65 },
-        { name: 'C++', level: 70 },
-        { name: 'Java', level: 50 },
-        { name: 'HTML / CSS', level: 90 },
-        { name: 'JavaScript', level: 75 },
-        { name: 'TypeScript', level: 65 },
-        { name: 'SQL (SQLite)', level: 60 }
+        'Python',
+        'C',
+        'C++',
+        'Java',
+        'HTML / CSS',
+        'JavaScript',
+        'TypeScript',
+        'SQL (SQLite)'
       ]
     },
     {
       category: 'Libraries, Frameworks & Tools',
       skills: [
-        { name: 'Numpy', level: 65 },
-        { name: 'Pandas', level: 65 },
-        { name: 'Pytorch', level: 60 },
-        { name: 'React', level: 75 },
-        { name: 'Node.js', level: 60 },
-        { name: 'CMake', level: 65 },
-        { name: 'Linux / Unix CLI', level: 80 }
+        'Numpy',
+        'Pandas',
+        'Pytorch',
+        'TensorFlow',
+        'Scikit-learn',
+        'CMake',
+        'React',
+        'Node.js',
+        'Three.js',
+        'Linux / Unix CLI',
+        'Github'
       ]
     }
   ]
@@ -39,18 +83,10 @@ function Skills() {
           <div key={idx} className="skill-category">
             <h3>{category.category}</h3>
             <div className="skills-list">
-              {category.skills.map((skill, skillIdx) => (
-                <div key={skillIdx} className="skill-item">
-                  <div className="skill-header">
-                    <span className="skill-name">{skill.name}</span>
-                    <span className="skill-level">{skill.level}%</span>
-                  </div>
-                  <div className="skill-bar">
-                    <div 
-                      className="skill-progress" 
-                      style={{ width: `${skill.level}%` }}
-                    ></div>
-                  </div>
+              {category.skills.map((skill) => (
+                <div key={skill} className="skill-item">
+                  <SkillIcon icons={skillIcons[skill]} />
+                  <span className="skill-name">{skill}</span>
                 </div>
               ))}
             </div>

@@ -27,7 +27,7 @@ function Education() {
       description: 'Completed foundational courses in computer science and engineering, with a focus on programming and software development.',
       achievements: [
         'Student on Principal’s Honours list',
-        'Relevant Coursework: Programming Fundamentals, Algorithms, Linear Algebra, Calculus, Discrete Mathematics, Database, Computer Organization, Digitial Logic',
+        'Relevant Coursework: Programming Fundamentals, Algorithms, Linear Algebra, Calculus, Discrete Mathematics, Database, Web Development, Computer Organization, Digitial Logic',
       ]
     }
   ]
